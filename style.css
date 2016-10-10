@@ -3,7 +3,7 @@
  font-family: 'Raleway', sans-serif;
 */
 * {
-	box-sizing: border;
+	box-sizing: border-box;
 	vertical-align: baseline;
 	margin: 0;
 	padding: 0;
@@ -11,14 +11,56 @@
 body {
 	font-family: 'Open Sans';
 }
-h1.main {
+.logo {
+	float: left;
+	padding-left: 5%;	
+}
+.logo img {
+	height: 11rem;
+	width: 44rem;
+}
+.search-container {
+	float: right;
+	width: 15rem;
+	height: 2rem;
+	border: solid 2px #2A2B2C;
+	background-color: #fff;
+	border-radius: 6px;
+	box-shadow: 1px;
+	margin-right: 5%;
+	margin-top: 5rem;
+}
+.search-container:hover {
+	border: solid 2px #3F67C8;
+ }
+.search-container input{
+	float: left;
+	padding: 2.5%;
+	background-color: transparent;
+	width: 85%;
+	height: 95%;  
+	border: 0;    
+	padding: 0;
+	margin: 0;
+}
+.search-container a {
+	width: inherit;
+	height: inherit;
+}
+.search-button {
+	float: right;
+	margin: 0;
+	width: 15%;
+	height: 95%;
+	background-image: url("img/search-button.png");
+	background-repeat: no-repeat;
+	background-size: stretch;
+	border-left: solid 1px #ccc;
+}
+.main {
 	font-weight: bold;
 	padding-left: 5%;
-}
-.nav-bar ul {
-	display: inline;
-	list-style-type: none;
-    overflow: hidden;
+	margin: 1rem 0 0.5rem 0;
 }
 .top-bar {
 	height: 130px;
@@ -26,40 +68,37 @@ h1.main {
 	margin: auto;
 	padding-top: 50px;
 }
-.logo {
-	float: left;
-	padding-left: 5%;	
-}
-.logo img {
-	height: 175px;
-	width: 700px;	
-}
-.search-box {
-	float: right;
-	padding-right: 5%;
-	padding-top: 25px;
+.nav-bar ul {
+	display: inline;
+	list-style-type: none;
+    overflow: hidden;
+	width: 90%;
 }
 .nav-bar {	
 	display: inline-block;
-	font-size: 14px;
-	font-family: 'Raleway';
-	margin: 10px 0 10px 0;
-	padding: 0 0% 0 5%;
-	width: 95%;
-	height: 20%;		
+	/* margin: 0.625rem 0 0.625rem 0;*/
+	margin: 1rem 5% 0.6rem 5%;	
+	width: 90%;
+	height: 20%;	
 }
 .nav-bar a {
 	text-decoration: none;
 	color: black;
 }
-li.menu-item {
-	float: left;
-	font-size: 23px;
-	font-weight: 700;
-	border: 2px solid black;
-	padding: 10px 4.8% 10px 4.8%;
-	width: auto;	
-	text-align: center;	
+.menu-box {
+	width: 20%;
+}
+.menu-item {
+    font-family: 'Raleway';
+    float: left;
+    font-size: 14px;
+    font-weight: 700;
+    border: 2px solid black;
+    padding: 1rem 0 1rem 0;
+    width: 20%;
+    text-align: center;
+	white-space:nowrap;
+    overflow:hidden;
 }
 li.menu-item:hover {
 	background-color: steelblue;	
@@ -70,60 +109,57 @@ li.menu-item:hover {
 }
 .hero-image {
 	display: block;
-	margin: 0% 5%;
+	margin: 0% 5% 0 5%;
 	overflow: hidden;
 	background-image: url('img/hero.jpg');
 	background-size: cover;
-	height: 500px;
+	height: 31.25rem;
+	width: 90%;
 }
 .quick-links {
-	margin: 0;
-	display: block;
-	width: 100%;
-	height: 400px;	
+    margin: 0;
+    display: block;
+    width: 100%;
+    height: 27rem;
+    padding: 0 5% 1rem 5%;
 }
 .teaser {
-	display: inline-block;
-	border: 1px black;
-	float: left;
-	width: 23%;
-	height: 90%;
-	margin: 0 5% 6% 5%;
+    display: inline-block;
+    border: 1px black;
+    float: left;
+    width: 26.666%;
+    height: 100%;
+	margin: 0;
+}
+.teaser + .teaser {
+	margin: 0 0 0 10%;
 }
 .teaser-text {
-	height: 28%;
-	margin: 16px 0 0 0;
+	font-size: 1.125rem;
+	height: 25%;
+	margin: 0.6rem 0 2rem 0;
 }
 .teaser img {
-	width: 80%;
-	height: 300px;
+	width: 100%;
+	height: auto;
 }
-.teaser-image {
-	float: top;
-}
-a.teaser-link {
-	position: relative;
-	font-family: 'Open Sans';
+.teaser-link {
 	font-size: 20px;
-	text-align: right;
-	bottom: 0;
 	float: right;
 }
 .footer {
-	display: float;
 	height: 25%;
-	width: auto;
+	width: 90%;
 	margin: 0 5% 5% 5%;
+	padding-top: 2.5%;
 }
 .footer p {
-	margin: 0.3rem 0 0.3rem 0;	
+	margin: 0.3rem 0 0.3rem 0;
 	padding: 0;
 	font-size: 16px;
 }
 .horizontal-line {
 	width: 100%;
-	height: 10px;
-	margin-top: 50px;
 }
 .footer-address {
 	float: left;
@@ -159,11 +195,12 @@ a.teaser-link {
 	height: 75%;
 }
 .content-block {	
-	width: 90%;
-	height: 450px;
+	width: 100%;
+	height: 28.13rem;
 	padding: 0 5% 0 5%;
 }
 .text-block {
+	overflow: hidden;
 	float: left;
 	width: 50%;
 	height: 100%;
@@ -212,4 +249,202 @@ a.teaser-link {
 }
 .search-result a:visited {
 	color: blue;
+}
+
+/* Phone layout */
+@media screen and (max-width: 480px) {
+    .body {
+		font-size: 12px;
+	}
+	.top-bar, .nav-bar, .footer, .quick-links, .hero-image, .search-container {
+        display: float;
+		width: 100%;        
+		margin: 0;
+    }
+	.top-bar {
+		height: 18rem;
+	}	
+	.logo img, .search-box, .search-box img, .menu-item {
+		width: 100%;		
+	}
+	.hero-image {
+		background-image: url('img/hero-phone.jpg');
+		background-size: 
+	}
+	.search-container {
+		width: 90%;
+		margin: 0 5% 0 5%;
+	}
+	.search-button {
+		width: 10%;
+	}
+	.search-container input {
+		width: 90%;
+	}
+	.nav-bar {
+		margin: 0;		
+	}
+	.quick-links {
+		height: 85rem;
+	}	
+	.teaser {
+		width: 100%;
+		height: 33%;
+		padding: 0;
+		margin-bottom: 3%;		
+	}
+	.teaser + .teaser {
+		padding: 0;
+		margin: 0;
+	}
+	.teaser-text {
+		font-size: 1.1rem;
+		height: 25%;
+	}
+	.teaser-link {
+		font-size: 16px;
+	}
+	.footer {		
+		height: 7.5rem;
+		margin: 0;
+		padding: 0.5rem 3% 0 3%;
+		font-size: 14px;
+	}	
+	.horizontal-line {
+		width: 100%;			
+	}
+	.footer-address, .footer-copyright {
+		height: 30%;
+		margin-top: 0.7rem;
+		vertical-align: center;
+	}
+	.footer p {
+		font-size: 12px;
+	}
+	.content-block, .area-container {
+		display: inline-block !important;
+		height: 200%;
+	}
+	.text-block {
+		width: 100%;
+		font-size: 14px;
+	}
+	.image-block {
+		width: 100%;
+		height: 20rem;
+		margin-top: 3%;
+	}
+	.area-paragraph {
+		font-size: 14px;
+	}
+	.disaster-block, .disaster-block-right {
+		font-size: 14px;
+		width: 100%;
+		float: left;
+		margin: 3% 0 3% 0;
+		padding: 0;
+		text-align: left;
+	}
+	.disaster-block img, .disaster-block-right img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+/* shrink elements slightly in-between tablet and desktop layout to fix overrun */
+@media screen and (min-width : 480px) and (max-width : 1100px) {
+	.logo img {
+		height: 8rem;
+		width: 32rem;
+	}
+	.menu-item { 
+		font-size: 12px;
+		font-weight: 500px;
+		border: 1px solid black;
+		padding: 1rem 1% 1rem 1%;
+		width: 20%;
+	}
+	.teaser-text { 
+		font-size: 18px;
+	}
+	.teaser-link {
+		font-size: 18px;
+	}
+	.footer p { 
+		font-size: 14px;
+	}
+	.area-subtitle {
+		color: darkred;	
+		font-size: 18px;
+	}
+	.area-paragraph {
+		font-size: 18px;
+	}
+	.text-block {
+		font-size: 20px;
+	}
+	.disaster-block {
+		font-size: 18px;
+	}
+	.disaster-block-right {
+		font-size: 18px;
+	}
+}
+
+/* fix font size for teaser text so it doesn't overflow container */
+@media screen and (min-width: 480px) and (max-width: 1280px) {
+	.teaser-text {
+		font-size: 16px;
+	}
+	.teaser img {
+		height: auto;
+	}
+	.teaser-text {
+		height: 50%;
+	}
+}
+/* Main Tablet layout */
+@media screen and (min-width: 480px) and (max-width: 800px) {
+	.logo img {
+		width: 18rem;
+	}
+	.menu-item {
+		font-size: 10px;
+	}
+	.hero-image {
+		background-image: url('img/hero-tablet.jpg');
+		background-size: auto;
+		background-repeat: no-repeat;
+	}
+	.teaser-text {
+		height: 60%;
+	}
+	.teaser {
+		height: 100%;
+	}	
+	
+}
+@media screen and (min-width: 800px) and (max-width: 860px) {
+	.logo img {
+		width: 18rem;
+	}
+	
+}
+@media screen and (min-width: 480px) and (max-width: 640px) {
+	.search-container {
+		width: 25%;
+	}
+	.search-container input {
+		width: 74%;
+	}
+	.search-button {
+		width: 25%;
+	}
+	#current-focus-menu-item, #disaster-preparedness-menu-item {
+		font-size: 8px;
+		padding-bottom: 1.05rem;
+	}
+	.teaser-text {
+		font-size: 14px;
+	}
 }
