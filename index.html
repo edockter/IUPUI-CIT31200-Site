@@ -11,46 +11,48 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-<body background="img/bg/grey.png">
+<body background="img/bg/subtle_grunge_@2X.png">
 <!-- Header -->
-<div class="top-bar">
+<header class="top-bar">
 	<div class="logo">
 		<a href="index.html"><img src="img/logo2.png" text="Logo" /></a>
 	</div>
-	<div class="search-box">
-		<a href="search-results.html"><img src="img/search.png"/></a>
+	<div class="search-container">
+		<input type="search" placeholder="Search" />            
+			<a href="search-results.html"><span class="search-button"></span></a>
 	</div>
-</div>
+</header>
 
-<div class="nav-bar">
+<nav class="nav-bar">
 	<ul>
-		<a class="menu-link" href="about-us.html"><li class="menu-item">About Us</a></li>
-		<a class="menu-link" href="our-mission.html"><li class="menu-item">Our Mission</a></li>
-		<a class="menu-link" href="current-areas-of-focus.html"><li class="menu-item">Current Areas of Focus</a></li>
-		<a class="menu-link" href="disaster-preparedness.html"><li class="menu-item">Disaster Preparedness</a></li>
-		<a class="menu-link" href="contact-us.html"><li class="menu-item">Contact Us</a></li>
+		<a class="menu-link" href="about-us.html"><li class="menu-item">About Us</li></a>
+		<a class="menu-link" href="our-mission.html"><li class="menu-item">Our Mission</li></a>
+		<a class="menu-link" href="current-areas-of-focus.html"><li class="menu-item" id="current-focus-menu-item">Current Areas of Focus</li></a>
+		<a class="menu-link" href="disaster-preparedness.html"><li class="menu-item" id="disaster-preparedness-menu-item">Disaster Preparedness</li></a>
+		<a class="menu-link" href="contact-us.html"><li class="menu-item">Contact Us</li></a>
 	</ul>
-</div>
+</nav>
 
-<div class="hero-image"></div>
+<div class="hero-image" alt="Photo of a bumblebee on a black-eyed susan"></div>
 
 <!-- Main Content -->
+
 <h1 class="main">Quick Links</h1>
 <div class="quick-links">
 	<div class="teaser">
-	<img class="teaser-image" src="img/small-1.jpg" />
+	<img class="teaser-image" src="img/small-1.jpg" alt="A clover flower"/>
 	<p class="teaser-text">Mauris dicctum tincidunt lectus vitae ornare. Nunc a consectetur magna. Vivamus eu quam placerat augue vulputate auctor quis nec mi. In dignissim lorem mi, et</p>
-		<a class="teaser-link" href="">More >></a>
+		<a class="teaser-link" href="#">More >></a>
 	</div>
 	<div class="teaser">
-	<img src="img/small-2.jpg" />
+	<img src="img/small-2.jpg" alt="A clover flower" />
 	<p class="teaser-text">Duis aliquam, diam nec pretium porttitor, ipsum orci convallis lorem, id facilisis arcu quam ac urna. Sed fermentum, tortor id molestie sagittis, turpis enim mollis dui, a lobortis risus sem</p>
-		<a class="teaser-link" href="">More >></a>
+		<a class="teaser-link" href="#">More >></a>
 	</div>
 	<div class="teaser">
-	<img src="img/small-3.jpg" />
+	<img src="img/small-3.jpg" alt="A woman in a halloween parade with sugar skull makeup" />
 	<p class="teaser-text">Donec pellentesque, justo at tempor pharetra, nisl lorem condimentum felis, ac feugiat nunc elit ac est. Pellentesque condimentum odio accumsan, facilisis leo quis, vestibulum</p>
-		<a class="teaser-link" href="">More >></a>
+		<a class="teaser-link" href="#">More >></a>
 	</div>
 </div>
 

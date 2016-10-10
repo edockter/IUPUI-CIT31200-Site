@@ -11,39 +11,95 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
   <![endif]-->
 </head>
-<body background="img/bg/grey.png">
+<body background="img/bg/subtle_grunge_@2X.png">
 <!-- Header -->
-<div class="top-bar">
+<header class="top-bar">
 	<div class="logo">
 		<a href="index.html"><img src="img/logo2.png" text="Logo" /></a>
 	</div>
-	<div class="search-box">
-		<a href="search-results.html"><img src="img/search.png"/></a>
+	<div class="search-container">
+		<input type="search" placeholder="Search" />            
+			<a href="search-results.html"><span class="search-button"></span></a>
 	</div>
-</div>
+</header>
 
-<div class="nav-bar">
+<nav class="nav-bar">
 	<ul>
-		<a class="menu-link" href="about-us.html"><li class="menu-item">About Us</a></li>
-		<a class="menu-link" href="our-mission.html"><li class="menu-item">Our Mission</a></li>
-		<a class="menu-link" href="current-areas-of-focus.html"><li class="menu-item">Current Areas of Focus</a></li>
-		<a class="menu-link" href="disaster-preparedness.html"><li class="menu-item">Disaster Preparedness</a></li>
-		<a class="menu-link" href="contact-us.html"><li class="menu-item">Contact Us</a></li>
+		<a class="menu-link" href="about-us.html"><li class="menu-item">About Us</li></a>
+		<a class="menu-link" href="our-mission.html"><li class="menu-item">Our Mission</li></a>
+		<a class="menu-link" href="current-areas-of-focus.html"><li class="menu-item" id="current-focus-menu-item">Current Areas of Focus</li></a>
+		<a class="menu-link" href="disaster-preparedness.html"><li class="menu-item" id="disaster-preparedness-menu-item">Disaster Preparedness</li></a>
+		<a class="menu-link" href="contact-us.html"><li class="menu-item">Contact Us</li></a>
 	</ul>
-</div>
+</nav>
 
 <h1 class="main">Contact Us</h1>
 <div class="content-block">
-<article class="text-block">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nibh nunc, rutrum et dignissim in, malesuada in justo.
-	Pellentesque accumsan eros magna, ut tincidunt massa tincidunt non. Morbi tempor non augue et euismod.
-	Mauris non dui in turpis adipiscin consequat et a magna. Etiam quis risus purus. Fusce rutrum sem eu ipsum feugiat, id aliquet velit dapibus.
-	Nunc feugiat quam feugiat velit pretium viverra. Aenean eu faucibus quam. Nulla fringilla poseure augue, ac pellentesque nibh adipiscing ut. Vestibulum tempor sem nec quam varius sollicitudin. 
-	Fusce vitae sapien pharetra, laoreet lorem sed, dignissim nulla. Nullam non orci quis erat pharetra sagittis. Aenean pretium fringilla massa.
-	Donec sed consectetur diam. Nunc semper nibh ut orci sagittis, quis tempus massa convallis. Morbi scelerisque nibh a consequat sollicitudin.
-</article>
-<div class="image-block" id="map">
-</div>
+	<fieldset>
+		<legend>Contact Information</legend>
+		
+			<label for="first-name" style="padding-right: 12.4rem; padding-left: 0.2rem;">First Name</label>
+			<label for="last-name">Last Name </label>
+			<br />
+			<input id="first-name" type="text" 
+					pattern-"[a-zA-z ]{3,} 
+					placeholder="First Name"
+					maxlength="25" 
+					autofocus 
+					required />
+			
+			<input id="last-name" type="text" 
+					pattern-"[a-zA-z ]{3,} 
+					placeholder="Last Name"
+					maxlength="25" 
+					required />
+		
+		<br />
+		
+			<label for="email-address" style="padding-right: 0.8rem; padding-left: 0.2rem;">Email Address</label>
+			<label for="zip-code">Zip Code</label>			
+			<br />
+			<input id="email-address" type="email" 
+					name="email" placeholder="Email Address" required />								
+			<input id="zip-code" type="text" 
+					pattern="\d{5}-?(\d{4})?" placeholder="Zip" required />			
+	</fieldset>
+	<br />			
+	<fieldset id="gender-fieldset">
+		<legend>Gender</legend>
+		
+		<input class="gender-option" id="gender-male" type="radio" name="gender" />
+		<label for="gender-male">Male</label>
+		<br />
+		<input class="gender-option" id="gender-female" type="radio" name="gender" />
+		<label for="gender-female">Female</label>
+		<br />
+		<input class="gender-option" id="gender-other" type="radio" name="gender" checked />
+		<label for="gender-other">Other</label>		
+	</fieldset>
+	
+	<fieldset id="age-fieldset">
+		<legend>Age</legend>
+		<label for="age-group" style="margin-left: 0.4rem;">Age Group</label>
+		<br />
+		<select id="age-group" list="age-ranges" style="width: 8rem;">		
+			<option value="18-30">18-30</option>
+			<option value="31-50" selected>31-50</option>
+			<option value="51-70">51-70</option>
+			<option value="71+">71+</option>		
+		</select>
+	</fieldset>
+	
+	<button action="submit">Submit</button>
+	
+	<!-- 
+		First Name
+		Last Name
+		Email Address
+		5-digit ZIP Code (should be numbers only!)
+		Radio Buttons for gender
+		Dropdown selection for age range (18-30, 31-50, 51-70, 71+)
+	-->
 </div>
 
 <div class="footer">
@@ -63,17 +119,5 @@
 </body>
 <footer>
 <script type="text/javascript" script-name="carme" src="http://use.edgefonts.net/carme.js"></script>
-<script>
-  function initMap() {
-	var mapDiv = document.getElementById('map');
-	var map = new google.maps.Map(mapDiv, {
-		center: {lat: 39.7740592, lng: -86.1730373},
-		zoom: 17
-	});
-  }
-</script>
-<script async defer
-	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARkR5u_gQBsFJxrIVihmKqwvoAGV4vpv8&callback=initMap">
-</script>
 </footer>
 </html>

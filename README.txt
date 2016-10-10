@@ -1,78 +1,58 @@
-
-What’s the Big Idea?
-
+CIT 31200
+Assignment: Cross-Browser Compatible Website
  
 
-Refresh your HTML skills and ensure that you are correctly structuring a desktop website using HTML5 and CSS.  This site will be used in upcoming assessments, so be sure to read the instructions carefully.
+What’s the Big Idea?
+ 
 
+Building on your government agency/non-governmental organization website, you will implement accessibility features as well as ensure that your website is cross-browser compatible (and supports some older browsers as well.)
 
 
 
 Instructions
+ 
+
+Starting with your government agency/non-governmental organization website, do the following:
+ 
+
+Review comments on your informational website project thus far and make any suggested update
+ 
+
+Add a contact form that allows users to register for more information via an HTML form (the form will not function.) (See more instructions below)
+
+
+
+Additional Web Form Instructions
+ 
+
+Your form must collect the following information:
+First Name
+Last Name
+Email Address
+5-digit ZIP Code (should be numbers only!)
+Radio Buttons for gender
+Dropdown selection for age range (18-30, 31-50, 51-70, 71+)
+Make sure you take care and style your form by adjusting padding and margins as explained in this sitepoint article http://www.sitepoint.com/fancy-form-design-css-2/ (Links to an external site.). Make sure your form fields are intentionally placed on the page and avoid jumbled jagged forms.  (Yes I put that in bold.)
 
  
 
-You have been provided a “clickable” prototype in PDF format (just scroll if the clicks do not work.)  
+ (20 points)
+
+Use the HTML5 form field elements to do some light error checking and include placeholder attributes.  All fields are required, the email address must be an email address, and the ZIP code must be numeric. At a minimum you must use the form attributes of Placeholder, Autofocus, and Required.
+Write a one page summary including the steps that you would take to implement a poliyfill that will allow an older web browser to correctly view the web form. Include details about the specific fields of the HTML5 form and which attributes would appear or not appear on the page if using IE 6. Make sure to research and include a procedure for how you would check and verify that your polyfill is working correctly. (5 points)
 
  
-
-Using HTML5 and CSS, construct a website that matches the layout provided in the prototype.
-
  
-
-For this assignment you should create ALL of the pages in the attached prototype. CIT31200-HTML5-Prototype.pdfPreview the documentView in a new window (Note that the formatting of the subpages is incredibly similar, so this is not as overwhelming as it may seem.) I want to make a special note here in regards to the prototype the footer in the pdf is split into two divs this is not a requirement. Feel free to just use a simple footer. In addition to this the search feature is purely cosmetic and does not actually perform a search. Also to generate content use Lorem Ipsum so that we can have an idea of how content would fit on the page.
-
-Lorem Ipsum generators:
-
-http://lipsum.com/ (Links to an external site.)
-
-http://ipsum-generator.com/ (Links to an external site.)
-
- 
-
-Your primary goals for this project are:
-
-Use proper HTML5 elements to ensure the structure of the page and it’s Document Object Model (DOM) are organized.  Specifically, you will need to use the HEADER, FOOTER, and MAIN tags.
-
-Use minimal CSS for positioning to ensure your page layout is correct.  That means that your pages won't look as fancy as the pages in the pdf but that comes later. We are really working on setting up the structural tags so we can focus on page layout and styling. THEN, if you like, go back and add styling.  You will improve the CSS in an upcoming project.
-
-Ensure you use a SINGLE, EXTERNAL CSS file for the entire site.
-
- 
-
-You may:
-
-Source images, photos, and logos from any source you wish (cite your source in your HTML comments.)  Yes this is legal, as copyright law allows for “fair use” of materials in an educational context.
-
-Use images and photos that are watermarked
-
-Manipulate images using a photo editor so that they fit a specific constraint or size
-
- 
-
-You may NOT:
-
-Use a pre-supplied template or framework that you have obtained from another source.  Your code for this assignment must be 100% YOUR OWN WORK.  (We will find sources for starter projects later this semester.)
-
-Use a server-side programming language (PHP, ASPX, etc.) for this course.  Yes, this will require some copying and pasting on your part.  No, it’s not like this in the real world.
-
-Host the website on a personal server.  To be graded your assignment must be posted on the university server provided to you.
-
-
-
 
 Submitting Your Work
-
  
 
-Your assignment submission consists of two components:
-
+Your assignment submission consists of three components:
  
 
-A ZIP file that contains ALL of the source code for your site (please ensure the site’s local root folder is the root of the ZIP file)
-
-A link to the website’s home page on the university-provided webserver (please make sure the link you input on the assignment page is clickable). Just put this link in the "comments" field for the file upload.
-
+A ZIP file that contains ALL of the source code for your updated site (please ensure the site’s local root folder is the root of the ZIP file)
+A link to the website’s home page on the university-provided webserver (please make sure the link you input on the assignment page is clickable)
+A screenshot of your contact form in an Internet Explorer simulator
  
 
-Assignments are due at 11:59pm on the due date.
+Assignments are due at 11:59pm on the due date listed.
