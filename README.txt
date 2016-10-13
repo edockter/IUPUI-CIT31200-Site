@@ -1,5 +1,5 @@
-CIT 31200
-Assignment: Cross-Browser Compatible Website
+**CIT 31200**
+**Assignment: Cross-Browser Compatible Website**
  
 
 What’s the Big Idea?
