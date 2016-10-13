@@ -13,12 +13,13 @@ Add a contact form that allows users to register for more information via an HTM
 
 ####Additional Web Form Instructions
  Your form must collect the following information:
-First Name
-Last Name
-Email Address
-5-digit ZIP Code (should be numbers only!)
-Radio Buttons for gender
-Dropdown selection for age range (18-30, 31-50, 51-70, 71+)
+* First Name
+* Last Name
+* Email Address
+* 5-digit ZIP Code (should be numbers only!)
+* Radio Buttons for gender
+* Dropdown selection for age range (18-30, 31-50, 51-70, 71+)
+
 Make sure you take care and style your form by adjusting padding and margins as explained in this sitepoint article http://www.sitepoint.com/fancy-form-design-css-2/ (Links to an external site.). Make sure your form fields are intentionally placed on the page and avoid jumbled jagged forms.  (Yes I put that in bold.)
 
  
