@@ -1,8 +1,8 @@
-**CIT 31200**
+*CIT 31200*
 **Assignment: Cross-Browser Compatible Website**
  
 
-What’s the Big Idea?
+Whatâ€™s the Big Idea?
  
 
 Building on your government agency/non-governmental organization website, you will implement accessibility features as well as ensure that your website is cross-browser compatible (and supports some older browsers as well.)
@@ -50,8 +50,8 @@ Submitting Your Work
 Your assignment submission consists of three components:
  
 
-A ZIP file that contains ALL of the source code for your updated site (please ensure the site’s local root folder is the root of the ZIP file)
-A link to the website’s home page on the university-provided webserver (please make sure the link you input on the assignment page is clickable)
+A ZIP file that contains ALL of the source code for your updated site (please ensure the siteâ€™s local root folder is the root of the ZIP file)
+A link to the websiteâ€™s home page on the university-provided webserver (please make sure the link you input on the assignment page is clickable)
 A screenshot of your contact form in an Internet Explorer simulator
  
 
