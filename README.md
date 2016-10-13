@@ -1,5 +1,5 @@
 #CIT 31200
-###Assignment: Cross-Browser Compatible Website
+###Assignment #7: Unit 1 Week 3 CSS Assignment
 ####What’s the Big Idea?
 Using CSS you will convert a multi-page website into a responsive site using CSS reset and media queries.
 
