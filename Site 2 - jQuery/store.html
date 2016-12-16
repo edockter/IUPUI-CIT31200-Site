@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>NeverNot</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/nevernot.css" media="all">
+
+	<!-- Responsive Stylesheets -->
+	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+	<script src="js/modernizr-2.5.3-min.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="headcontainer">
+		<header>
+		<div class="section group">
+			<div class="col span_1_of_6">
+			</div>
+			<div class="col span_1_of_6">
+				<img src="img/nevernot_logo.jpg" alt="NeverNot logo" />
+			</div>
+			<div class="col span_1_of_6">
+				<div class="nav_button">
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+			<div class="col span_1_of_6">
+				<div class="nav_button">
+					<a href="#">About Us</a>
+				</div>
+			</div>
+			<div class="col span_1_of_6">
+				<div class="nav_button">
+					<a href="store.html">Online Store</a>
+				</div>
+			</div>
+			<div class="col span_1_of_6">
+			</div>
+		</div>
+		</header>
+	</div>
+	<div id="maincontentcontainer">
+		<div id="maincontent">
+
+			<div class="section group">
+				<div class="col span_1_of_6">
+				</div>
+				<div class="col span_1_of_6">
+					<div>
+						<h4>Filter</h4>
+					</div>
+					<div>
+						Category:<br />
+						<input type="radio" name="category_filter" value="all" checked="checked">&nbsp;All</input><br />
+						<input type="radio" name="category_filter" value="accessory">&nbsp;Accessory<br />
+						<input type="radio" name="category_filter" value="hardware">&nbsp;Hardware<br />
+						<input type="radio" name="category_filter" value="mobile">&nbsp;Mobile App<br />
+						<input type="radio" name="category_filter" value="software">&nbsp;Software<br />
+					</div>
+				</div>
+				<div class="col span_3_of_6">
+					<h4>Products</h4>
+					
+					<div class="product_listing" data-category="accessory" data-quantity="9">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/backpack.jpg" alt="Backpack thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">The NeverNot Backpack</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$75.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="accessory" data-quantity="100">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/bag.jpg" alt="Bag thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">The NeverNot Bag</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$45.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="software">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/nevernot_business.jpg" alt="NeverNot Premium thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot Premium 1-month Subscription</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$8.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="software">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/nevernot_business.jpg" alt="NeverNot Business thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot Business Subscription</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$125.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="mobile">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/nevernot_premium.jpg" alt="NeverNot Premium thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot for iPad</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$4.99</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="software">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/nevernot_business.jpg" alt="NeverNot Premium thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot Premium 1-year Subscription</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$39.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="mobile">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/nevernot_premium.jpg" alt="NeverNot Premium thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot for iPhone</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$1.99</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="mobile">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/nevernot_premium.jpg" alt="NeverNot Premium thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot for Android</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$1.99</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="hardware" data-quantity="2">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/scanner.jpg" alt="Scanner thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">ScanSnap NeverNot Edition</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$225.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="hardware" data-quantity="12">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/stylus.jpg" alt="Stylus thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">NeverNot Stylus</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$75.00</div>
+						</div>
+						</a>
+					</div>
+					
+					<div class="product_listing" data-category="accessory" data-quantity="7">
+						<a href="detail.html">
+						<div class="product_image">
+							<img src="img/wallet.jpg" alt="Wallet thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="product_name">Wallet</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$35.00</div>
+						</div>
+						</a>
+					</div>
+					
+				</div>
+				<div class="col span_1_of_6">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="footercontainer">
+		<footer class="group">
+			
+			<div id="smallprint">
+				The template for this site comes from <a href="http://www.responsivegridsystem.com/" target="_blank">http://www.responsivegridsystem.com/</a>.  Used under the Creative Commons license.
+			</div>
+
+		</footer>
+	</div>
+</div>
+
+
+
+	<!-- JavaScript at the bottom for fast page loading -->
+
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-2.1.1.min.js"><\/script>')</script>
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
+
+	<!-- More Scripts-->
+	<script src="js/responsivegridsystem.js"></script>
+
+
+</body>
+</html>

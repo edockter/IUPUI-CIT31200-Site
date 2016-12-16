@@ -1,0 +1,64 @@
+.promo_button {
+	text-align: center;
+	font-size: 140%;
+	background-color: #ddd;
+	padding: 10px;
+}
+
+.nav_button {
+	text-align: center;
+	font-size: 140%;
+	background-color: #eee;
+	padding: 10px;
+}
+
+.nav_button a:visited, a:link {
+	color: #000;
+}
+
+.home_category {
+	text-align: center;
+}
+
+.home_category a:visited, a:link {
+	color: #000;
+	font-size: 120%;
+}
+
+.product_listing {
+	padding: 10px;
+	margin-bottom: 10px;
+	background-color: #eee;
+	min-height: 180px;
+}
+
+.inventory_low {
+	background-color: #FFCC66;
+}
+
+.product_listing a:visited, a:link {
+	color: #000;
+	font-size: 100%;
+}
+
+.product_listing .product_image {
+	float:left;
+	padding-right: 10px;
+}
+
+.product_listing .product_info {
+	
+}
+
+.product_name {
+	font-size: 120%;
+}
+
+.product_listing .product_price {
+	font-size: 140%;
+}
+
+.quantity_box {
+	float: right;
+	padding-left: 20px;
+}
